@@ -15,7 +15,7 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Prevents the entire page from scrolling */
+    overflow: hidden;
 }
 
 .container {
@@ -26,31 +26,27 @@ body {
     color: #fff;
     margin: 20px;
     padding: 10px;
-    width: 500px;
-    max-height: 90vh; /* Adjust height as needed */
+    width: 100%; /* Responsive width */
+    max-width: 500px; /* Maximum container width */
+    max-height: 90vh;
     border-radius: 15px;
     background: transparent;
     border: 3px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.2), 0 4px 8px rgba(0,0,0,0.1);
     transition: all 0.3s ease-in-out;
-    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-y: auto;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px/16 */
     text-align: center;
-    margin-bottom: 8px;
-}
-
-.container:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 0.5rem;
 }
 
 .form .input-box {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 
 .form :where(.input-box input, .select-box select) {
@@ -58,13 +54,10 @@ h2 {
     width: 100%;
     outline: none;
     color: #707070;
-    margin-top: 8px;
+    margin-top: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 0 10px;
-}
-.year-select{
-    width:100%;
 }
 
 .input-box input:focus,
@@ -74,18 +67,15 @@ h2 {
 
 .form .column {
     display: flex;
-    column-gap: 15px;
+    flex-wrap: wrap;
+    gap: 15px; /* Gap for both columns and rows */
 }
 
 .form :where(.gender-option, .gender) {
     display: flex;
     align-items: center;
-    column-gap: 30px;
     flex-wrap: wrap;
-}
-
-.form .gender {
-    column-gap: 5px;
+    gap: 10px;
 }
 
 .gender input {
@@ -97,10 +87,7 @@ h2 {
 }
 
 .gender label {
-    color: #fffefe;
-}
-.year-select{
-    width: 100%;
+    color: #fff;
 }
 
 .form button {
@@ -120,17 +107,26 @@ h2 {
 .form button:hover {
     background: linear-gradient(90deg, #e7304e 0%, #ff7eb3 100%);
 }
-.submit{
-    background: linear-gradient rgba(141, 26, 126, 0.829);
-}
-/* Responsive Adjustments */
-@media screen and (max-width: 500px) {
-    .form .column {
-        flex-direction: column;
+
+/* Media Queries for Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5px;
+        max-width: 95%; /* Make container use almost full width */
     }
-    .form :where(.gender-option, .gender) {
-        flex-direction: column;
-        row-gap: 10px;
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size on smaller devices */
+    }
+
+    .form button {
+        height: 50px; /* Larger button for easier interaction */
     }
 }
 
+@media screen and (max-width: 500px) {
+    .form .column, .form .gender-option, .form .gender {
+        flex-direction: column;
+        align-items: center; /* Center align items for better mobile layout */
+    }
+}
