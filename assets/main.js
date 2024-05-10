@@ -1,4 +1,8 @@
-// Placeholder for any interactive JavaScript
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialize components or data fetching here
+    var selectElement = document.querySelector('select');
+    var data = '';
+    for (var i = 2025; i <= 2030; i++) {
+        data += `<option value="${i}">${i}</option>`;
+    }
+    selectElement.innerHTML += data;  
 });
