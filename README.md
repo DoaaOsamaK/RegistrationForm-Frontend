@@ -7,20 +7,22 @@ This registration form is an excellent showcase of my capabilities in web develo
 
 
 ## 🌵 Table of Contents
-About the Project
-Technologies Used
-Demo
-Features
-Getting Started
-Contributing
-Contact
+
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [Demo](#demo)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Contact](#contact)
+
 ## 🌵 About the Project
 This project involves a custom registration form that I designed and implemented. The form is developed using HTML and CSS for layout and styling, with JavaScript enhancing the form's functionality. A key feature of the JavaScript implementation is a loop used in the "Graduation Date" field, which dynamically generates years for users to select from.
 
 ## 🌵 Technologies Used
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 ## 🌵 Demo
 Live Demo
 
