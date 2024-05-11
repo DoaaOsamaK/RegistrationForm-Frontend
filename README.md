@@ -23,8 +23,9 @@ This project involves a custom registration form that I designed and implemented
 - HTML
 - CSS
 - JavaScript
+  
 ## 🌵 Demo
-Live Demo
+[Live Demo](https://doaaosamak.github.io/RegistrationForm-Frontend/)
 
 ## 🌵 Features
 User data entry form
@@ -37,10 +38,10 @@ To view and interact with the registration form, simply open the index.html file
 ## 🌵 Contributing
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
-Fork the repository
-Create your feature branch (git checkout -b feature/YourFeature)
-Commit your changes (git commit -am 'Add some feature')
-Push to the branch (git push origin feature/YourFeature)
-Create a new Pull Request
+- Fork the repository
+- Create your feature branch (git checkout -b feature/YourFeature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin feature/YourFeature)
+- Create a new Pull Request
 ## 🌵 Contact
-For any questions or feedback, feel free to contact Doa'a Osama.
+For any questions or feedback, feel free to contact doaaosamakhalaf@gmail.com.
